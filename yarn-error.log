@@ -1,0 +1,32 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add express
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Nascimento\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\binaries\php\php_runningversion;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\EasyPHP-Devserver-17\eds-binaries\php\php713vc14x86x180513225722;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\Nascimento\AppData\Local\Android\Sdk\platform-tools;C:\Users\Nascimento\AppData\Local\Android\Sdk\tools;C:\Program Files (x86)\Yarn\bin;C:\Program Files\PostgreSQL\9.5\bin;C:\Users\Nascimento\AppData\Local\Microsoft\WindowsApps;C:\Users\Nascimento\AppData\Roaming\Composer\vendor\bin;C:\Users\Nascimento\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\Nascimento\AppData\Roaming\npm;C:\Users\Nascimento\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nascimento\AppData\Local\Yarn\bin;C:\Users\Nascimento\AppData\Local\Android\Sdk\emulator;C:\Users\Nascimento\AppData\Local\Android\Sdk\tools;C:\Users\Nascimento\AppData\Local\Android\Sdk\tools\bin;C:\Users\Nascimento\AppData\Local\Android\Sdk\platform-tools;C:\Users\Nascimento\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.24.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)
+
+npm manifest: 
+  {
+    "name": "backend-omnistack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
