@@ -15,7 +15,8 @@ const upload = multer(uploadConfig);
 // req.params.nameParam =(rota/:id) acesa params da rota (utilizado para update e delete)
 // req.body = acessa corpo da requisição  (criação e edição)
 routes.post('/sessions', SessionController.store);
-
+routes.put('/sessions/', SessionController.update);
+routes.get('/sessions', SessionController.index);
 routes.post('/spots', upload.single('imagem'),SpotController.store);
 routes.post('/spots/:spot_id/bookings',BookingController.store);
 routes.get('/spots', SpotController.index);
