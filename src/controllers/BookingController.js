@@ -15,6 +15,13 @@ module.exports = {
     //Retorndando os dados do relacionamento dos schemas
     await booking.populate('spot').populate('user').execPopulate();
 
+    const ownerSocket = req.connecedUsers[booking.spot.user];
+    if(ownerSocket){
+      console.log('OQ ESTOU ENVIANDO PARA O FRONT');
+      console.log(booking);
+      req.io.to(ownerSocket).emit('booking_request',booking);
+    }
+
     return res.json(booking);
   }
 }
