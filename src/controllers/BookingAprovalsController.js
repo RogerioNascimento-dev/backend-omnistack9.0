@@ -11,6 +11,13 @@ module.exports = {
 
     booking.aprovado = true;
     await booking.save();
+
+    //Enviando para o frontEndMobile informação de aceitação
+    const bookingUserSocket = req.connecedUsers[booking.user]
+    if(bookingUserSocket){
+      req.io.to(bookingUserSocket).emit('booking_response',booking);
+    }
+
     return res.json(booking);
   }
 }
